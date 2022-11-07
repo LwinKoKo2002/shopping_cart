@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<div class="loader-container" style="z-index: 2000">
+  <div class="loader">Loading...</div>
+</div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electro</title>
+    <!--  Custom Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- Slick Slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- Animate Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="up">
+    <!--------- Start of Sidebar ----------->
+    <section class="sidebar vh-100 col-12 p-0">
+      <div
+        class="brand d-flex justify-content-between align-items-center p-3 hide-sidebar-btn"
+        style="font-size: 18px"
+      >
+        <span class="text-white mr-1 text-uppercase">close</span>
+        <i class="fa-solid fa-xmark text-white"></i>
+      </div>
+      <div class="sidebar-feature">
+        <div class="sidebar-header">
+          <h6>Menu</h6>
+        </div>
+        <div class="sidebar-item">
+          <ul>
+            <li class="d-flex align-items-center">
+              <a href="index.html" class="active">Home</a>
+            </li>
+            <div class="divider"></div>
+            <li class="d-flex align-items-center">
+              <a href="">Mobile Phone</a>
+            </li>
+            <div class="divider"></div>
+            <li class="d-flex align-items-center">
+              <a href="">Computer & Laptop</a>
+            </li>
+            <div class="divider"></div>
+            <li class="d-flex align-items-center">
+              <a href="contact.html">Contact Us</a>
+            </li>
+            <div class="divider"></div>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--------- Start of Navbar ----------->
+    <section class="container-fluid site-nav">
+      <div class="navbar">
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4">
+              <div class="brand-nav">
+                <a href="index.html">
+                  <img src="images/logo.png" alt="logo-picture" />
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-2">
+              <div class="search-nav">
+                <div class="search-input">
+                  <input
+                    type="text"
+                    name="search"
+                    placeholder="Search ...."
+                    class="form-control"
+                  />
+                </div>
+                <button class="btn-theme">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+              <div class="account-nav">
+                <p class="mb-0 d-none d-lg-block">
+                  <a href="login.html">Login</a>
+                </p>
+                <p class="mb-0 text-white d-none d-lg-block">/</p>
+                <p class="mb-0 d-none d-lg-block">
+                  <a href="register.html">Signup</a>
+                </p>
+                <p class="mb-0 text-white d-lg-none d-block">
+                  <i class="fas fa-bars show-sidebar-btn"></i>
+                </p>
+                <p class="mb-0 text-white d-md-none d-block">
+                  <a href=""><i class="fas fa-search"></i></a>
+                </p>
+                <p class="mb-0 text-white d-lg-none d-block">
+                  <a href="login.html"><i class="fas fa-user"></i></a>
+                </p>
+                <p class="mb-0 text-white">
+                  <a href=""><i class="fas fa-shopping-cart"></i></a>
+                </p>
+              </div>
+            </div>
+            <!-- <div class="col-12 search-nav-hidden">
+              <div class="search-nav-two">
+                <div class="search-input">
+                  <input
+                    type="text"
+                    name="search"
+                    placeholder="Search ...."
+                    class="form-control"
+                  />
+                </div>
+                <button class="btn-theme">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="category-nav shadow-sm d-lg-block d-none">
+      <div class="row justify-content-center">
+        <div class="col-xl-9 col-lg-10">
+          <ul class="nav-item d-flex px-3">
+            <li class="ml-lg-1">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="ml-xl-5 ml-lg-5 text-center">
+              <a href="">Mobile Phone</a>
+            </li>
+            <li class="ml-xl-5 ml-lg-5 text-center">
+              <a href="">Computer & Laptop</a>
+            </li>
+            <li class="ml-xl-5 ml-lg-5 text-center">
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--------- Hero Section ----------->
+    <!-- <section class="hero-section">
+      <div class="first-part"></div>
+      <div class="container">
+        <div class="second-part">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <div class="hero-section-review">
+                <h2 class="font-weight-bolder">
+                  GET 15% CASHBACK <br />
+                  UPTO $320
+                </h2>
+                <p class="text-black-50">hurry! limited period offer</p>
+                <button class="btn btn-theme text-uppercase">Shop Now</button>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="hero-section-img">
+                <img src="images/hero-section-img.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!--------- Brand Section ----------->
+    <!-- <section class="brand-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-12 p-sm-2" style="padding: 5px">
+            <div class="card bg-warning">
+              <div class="card-body" style="padding: 1.15rem">
+                <div
+                  class="brad-feature d-flex flex-md-column-reverse flex-lg-row align-items-center"
+                >
+                  <div class="brand-item text-center">
+                    <h6>
+                      Mobile and <br />
+                      accessories
+                    </h6>
+                    <button class="btn text-uppercase">shop now</button>
+                  </div>
+                  <div class="brand-img">
+                    <img src="images/product11.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 p-sm-2" style="padding: 5px">
+            <div class="card bg-success">
+              <div class="card-body" style="padding: 1.15rem">
+                <div
+                  class="brad-feature d-flex flex-md-column-reverse flex-lg-row align-items-center"
+                >
+                  <div class="brand-item text-center">
+                    <h6>
+                      Laptop and <br />
+                      accessories
+                    </h6>
+                    <button class="btn text-uppercase">shop now</button>
+                  </div>
+                  <div class="brand-img">
+                    <img src="images/product2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 p-sm-2" style="padding: 5px">
+            <div class="card bg-dark">
+              <div class="card-body" style="padding: 1.15rem">
+                <div
+                  class="brad-feature d-flex flex-md-column-reverse flex-lg-row align-items-center"
+                >
+                  <div class="brand-item text-center">
+                    <h6>
+                      Camera and <br />
+                      accessories
+                    </h6>
+                    <button class="btn text-uppercase">shop now</button>
+                  </div>
+                  <div class="brand-img">
+                    <img src="images/camera.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 mb-3" style="padding: 5px">
+            <div class="card shadow-sm">
+              <div class="card-body notebook-collection" style="padding: 12px">
+                <h6>Notebook Collection</h6>
+                <div class="row notebook-slide">
+                  <div class="col-4 col-lg-4 text-center">
+                    <div class="notebook-item">
+                      <img src="images/apple.gif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder notebook-text">
+                      Apple MacBook
+                    </p>
+                  </div>
+                  <div class="col-4 col-lg-4 text-center">
+                    <div class="notebook-item">
+                      <img src="images/acer.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">Acer NoteBook</p>
+                  </div>
+                  <div class="col-4 col-lg-4 text-center">
+                    <div class="notebook-item">
+                      <img src="images/ausu.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder ml-1">Ausu NoteBook</p>
+                  </div>
+                  <div class="col-4 col-lg-4 text-center">
+                    <div class="notebook-item">
+                      <img src="images/dell.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">Dell NoteBook</p>
+                  </div>
+                  <div class="col-4 col-lg-4 text-center">
+                    <div class="notebook-item">
+                      <img src="images/hp.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">HP Notebook</p>
+                  </div>
+                  <div class="col-4 col-lg-4 text-center">
+                    <div class="notebook-item">
+                      <img src="images/lenovo.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">Lenovo Notebook</p>
+                  </div>
+                  <div class="col-4 col-lg-4 text-center">
+                    <div class="notebook-item">
+                      <img src="images/huawei.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">Huawei Notebook</p>
+                  </div>
+                  <div class="col-4 col-lg-4 text-center">
+                    <div class="notebook-item">
+                      <img src="images/rog.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">ROG Gaming Book</p>
+                  </div>
+                  <div class="col-4 col-lg-4 text-center">
+                    <div class="notebook-item">
+                      <img src="images/msi.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">MSI Gaming Book</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-3" style="padding: 5px">
+            <div class="card shadow-sm">
+              <div class="card-body notebook-collection" style="padding: 12px">
+                <h6>Mobile Phone Collection</h6>
+                <div class="row notebook-slide">
+                  <div class="col-4 col-lg-4 text-center">
+                    <div class="notebook-item">
+                      <img src="images/iphone.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">Apple Iphone</p>
+                  </div>
+                  <div class="col-4 col-lg-4 text-center">
+                    <div class="notebook-item">
+                      <img src="images/samsung.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">Samsung Mobile</p>
+                  </div>
+                  <div class="col-4 col-lg-4 text-center">
+                    <div class="notebook-item">
+                      <img src="images/huawei-mobile.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">Huawei Mobile</p>
+                  </div>
+                  <div class="col-4 col-lg-4 text-center">
+                    <div class="notebook-item">
+                      <img src="images/oppo.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">Oppo Mobile</p>
+                  </div>
+                  <div class="col-4 col-lg-4 text-center">
+                    <div class="notebook-item">
+                      <img src="images/vivo.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">Vivo Mobile</p>
+                  </div>
+                  <div class="col-4 col-lg-4 text-center">
+                    <div class="notebook-item">
+                      <img src="images/mi.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">MI Mobile</p>
+                  </div>
+                  <div class="col-4 col-lg-4 text-center">
+                    <div class="notebook-item">
+                      <img src="images/realme.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">Realme Mobile</p>
+                  </div>
+                  <div class="col-4 col-lg-4 text-center">
+                    <div class="notebook-item">
+                      <img src="images/tecno.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">TECNO Mobile</p>
+                  </div>
+                  <div class="col-4 col-lg-4 text-center">
+                    <div class="notebook-item">
+                      <img src="images/tablet.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">Tablet</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 mb-3" style="padding: 5px">
+            <div class="card shadow-sm">
+              <div class="card-body notebook-collection" style="padding: 12px">
+                <h6>TV Collection</h6>
+                <div class="row television-slide">
+                  <div class="col-4 col-lg-2 text-center">
+                    <div class="notebook-item">
+                      <img src="images/samsung-tn.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">Samsung TV</p>
+                  </div>
+                  <div class="col-4 col-lg-2 text-center">
+                    <div class="notebook-item">
+                      <img src="images/sony.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">Sony TV</p>
+                  </div>
+                  <div class="col-4 col-lg-2 text-center">
+                    <div class="notebook-item">
+                      <img src="images/lg.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">LG TV</p>
+                  </div>
+                  <div class="col-4 col-lg-2 text-center">
+                    <div class="notebook-item">
+                      <img src="images/tcl.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">TCL TV</p>
+                  </div>
+                  <div class="col-4 col-lg-2 text-center">
+                    <div class="notebook-item">
+                      <img src="images/hisense.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">Hisense TV</p>
+                  </div>
+                  <div class="col-4 col-lg-2 text-center">
+                    <div class="notebook-item">
+                      <img src="images/panasonic.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">panasonic TV</p>
+                  </div>
+                  <div class="col-4 col-lg-2 text-center">
+                    <div class="notebook-item">
+                      <img src="images/sharp.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">Sharp TV</p>
+                  </div>
+                  <div class="col-4 col-lg-2 text-center">
+                    <div class="notebook-item">
+                      <img src="images/mi-tv.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">MI TV</p>
+                  </div>
+                  <div class="col-4 col-lg-2 text-center">
+                    <div class="notebook-item">
+                      <img src="images/android.avif" alt="" />
+                    </div>
+                    <p class="font-weight-bolder">Android TV</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!--------- Footer Section ----------->
+    <!-- <footer>
+      <section class="card shadow-md footer">
+        <div class="card-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="footer-item mb-4">
+                  <h6>Welcome</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequuntur, adipisci? Voluptatem molestiae suscipit
+                    officia.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="footer-item mb-4 ml-md-5">
+                  <h6>Connect With Us</h6>
+                  <p><a href="">Facebook</a></p>
+                  <p><a href="">Twitter</a></p>
+                  <p><a href="">Instagram</a></p>
+                  <p><a href="">You Tube</a></p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="footer-item mb-4">
+                  <h6>Useful Links</h6>
+                  <p><a href="index.html">Home</a></p>
+                  <p><a href="">Mobile Phone</a></p>
+                  <p><a href="">Computer $ Laptop</a></p>
+                  <p><a href="contact.html">Contact Us</a></p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="footer-item ml-md-5">
+                  <h6>Contact Details</h6>
+                  <p>Address: 3548 Columbia Mine Road,</p>
+                  <p>Wheeling, West Virginia, 26003</p>
+                  <p>Contact : +959 69 496 4472</p>
+                  <p>E-mail : lwinkoko0271@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-feature">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 text-center">
+              <p class="text-white">
+                Copyright @ 2022 | Developed By Lwin Ko Ko
+              </p>
+            </div>
+            <div class="col-12 col-md-6 text-center">
+              <p>
+                <i class="fab fa-facebook mr-3"></i>
+                <i class="fab fa-twitter mr-3"></i>
+                <i class="fab fa-instagram mr-3"></i>
+                <i class="fab fa-youtube mr-3"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <a class="upbar shadow-md animate__animated animate__bounce" href="#up">
+      <i class="fa-solid fa-angle-up"></i>
+    </a> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

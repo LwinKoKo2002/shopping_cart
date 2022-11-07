@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<div class="loader-container" style="z-index: 2000">
+  <div class="loader">Loading...</div>
+</div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <!--  Custom Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- Slick Slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- Animate Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-secondary">
+    <!--------- Start of Sidebar ----------->
+    <section class="sidebar vh-100 col-12 p-0">
+      <div
+        class="brand d-flex justify-content-between align-items-center p-3 hide-sidebar-btn"
+        style="font-size: 18px"
+      >
+        <span class="text-white mr-1 text-uppercase">close</span>
+        <i class="fa-solid fa-xmark text-white"></i>
+      </div>
+      <div class="sidebar-feature">
+        <div class="sidebar-header">
+          <h6>Menu</h6>
+        </div>
+        <div class="sidebar-item">
+          <ul>
+            <li class="d-flex align-items-center">
+              <a href="index.html" class="active">Home</a>
+            </li>
+            <div class="divider"></div>
+            <li class="d-flex align-items-center">
+              <a href="">Mobile Phone</a>
+            </li>
+            <div class="divider"></div>
+            <li class="d-flex align-items-center">
+              <a href="">Computer & Laptop</a>
+            </li>
+            <div class="divider"></div>
+            <li class="d-flex align-items-center">
+              <a href="contact.html">Contact Us</a>
+            </li>
+            <div class="divider"></div>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--------- Start of Navbar ----------->
+    <section class="container-fluid site-nav">
+      <div class="navbar">
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-4">
+              <div class="brand-nav">
+                <a href="index.html">
+                  <img src="images/logo.png" alt="logo-picture" />
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-2">
+              <div class="search-nav">
+                <div class="search-input">
+                  <input
+                    type="text"
+                    name="search"
+                    placeholder="Search ...."
+                    class="form-control"
+                  />
+                </div>
+                <button class="btn-theme">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
+              <div class="account-nav">
+                <p class="mb-0 d-none d-lg-block">
+                  <a href="login.html">Login</a>
+                </p>
+                <p class="mb-0 text-white d-none d-lg-block">/</p>
+                <p class="mb-0 d-none d-lg-block">
+                  <a href="register.html">Signup</a>
+                </p>
+                <p class="mb-0 text-white d-lg-none d-block">
+                  <i class="fas fa-bars show-sidebar-btn"></i>
+                </p>
+                <p class="mb-0 text-white d-md-none d-block">
+                  <a href=""><i class="fas fa-search"></i></a>
+                </p>
+                <p class="mb-0 text-white d-lg-none d-block">
+                  <a href="login.html"><i class="fas fa-user"></i></a>
+                </p>
+                <p class="mb-0 text-white">
+                  <a href=""><i class="fas fa-shopping-cart"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="category-nav shadow-sm d-lg-block d-none">
+      <div class="row justify-content-center">
+        <div class="col-xl-9 col-lg-10">
+          <ul class="nav-item d-flex px-3">
+            <li class="ml-lg-1">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="ml-xl-5 ml-lg-5 text-center">
+              <a href="">Mobile Phone</a>
+            </li>
+            <li class="ml-xl-5 ml-lg-5 text-center">
+              <a href="">Computer & Laptop</a>
+            </li>
+            <li class="ml-xl-5 ml-lg-5 text-center">
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--------- Product  Detail----------->
+    <section class="product-detail">
+      <div class="d-flex justify-content-center">
+        <div class="col-xl-9 col-lg-10">
+          <div class="row">
+            <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+              <div class="card product-detail-item shadow-sm">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-5 col-12">
+                      <div class="product-detail-image">
+                        <img
+                          src="images/iphone-12.jpg"
+                          alt="iphone-12"
+                          width="200px"
+                          class="oringinal-image"
+                        />
+                      </div>
+                      <div
+                        class="product-detail-parent d-flex justify-content-center mb-5"
+                      >
+                        <div
+                          class="product-detail-category active"
+                          onclick="changeImage(this)"
+                        >
+                          <img src="images/iphone-12.jpg" alt="" />
+                        </div>
+                        <div
+                          class="product-detail-category"
+                          onclick="changeImage(this)"
+                        >
+                          <img
+                            src="images/iphone-12-white.jpg"
+                            alt=""
+                            class="iphone_12_white"
+                          />
+                        </div>
+                        <div
+                          class="product-detail-category"
+                          onclick="changeImage(this)"
+                        >
+                          <img src="images/iphone-12-red.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-7 col-12">
+                      <div class="product-detail-feature">
+                        <h5 class="mb-3">iPhone 12</h5>
+                        <p>
+                          - 6.1" Super Retina XDR OLED Display (1170 x 2532)
+                        </p>
+                        <p>- Hexa Core Processor</p>
+                        <p>- Ram 4 GB</p>
+                        <p>- 128 storage</p>
+                        <p>- Rear Camera Triple 12MP + 12MP</p>
+                        <p>- Front Camera 12MP</p>
+                        <p>- Bluetooth 5.0, Wireless Technology</p>
+                        <p>- 2,815 mAh Battery</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h6>SKU : 700805</h6>
+                    <h6>1 year Official Warranty</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+              <div class="card product-checkout-section shadow-sm">
+                <div class="card-body">
+                  <h5>iPhone 12 128GB (official)</h5>
+                  <hr />
+                  <p class="color">
+                    Color : <span id="color" class="ml-2">Black</span>
+                  </p>
+                  <div class="color-feature d-flex">
+                    <div
+                      class="color-feature-item active"
+                      onclick="changeColorImage(this)"
+                    >
+                      <div
+                        class="black-color color-section"
+                        data-img="images/iphone-12.jpg"
+                        data-color="Black"
+                      ></div>
+                    </div>
+                    <div
+                      class="color-feature-item"
+                      onclick="changeColorImage(this)"
+                    >
+                      <div
+                        class="white-color color-section"
+                        data-img="images/iphone-12-white.jpg"
+                        data-color="White"
+                      ></div>
+                    </div>
+                    <div
+                      class="color-feature-item"
+                      onclick="changeColorImage(this)"
+                    >
+                      <div
+                        class="red-color color-section"
+                        data-img="images/iphone-12-red.jpg"
+                        data-color="Red"
+                      ></div>
+                    </div>
+                  </div>
+                  <p class="price">
+                    <span class="text-dark">Price :</span> K 1,989,000
+                  </p>
+                  <div class="quantity-feature d-flex align-items-center">
+                    <div class="mr-3">
+                      <p class="mb-0">Quantity :</p>
+                    </div>
+                    <div class="select-quantity">
+                      <select
+                        name="quantity"
+                        id=""
+                        class="custom-select"
+                        class="p-5"
+                      >
+                        <option value="">1</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12 col-12">
+                      <button class="btn add-btn btn-block">Add to cart</button>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-12">
+                      <button class="btn buy-btn btn-block">By it now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+              <div class="card review shadow-sm">
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="review-item">
+                      <h6>Customer Reviews</h6>
+                      <p class="text-black-50">No reviews yet</p>
+                    </div>
+                    <div class="review-button">
+                      <button class="btn btn-theme add-comment-review">
+                        Write a review
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row comment-review"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------- Footer Section ----------->
+    <footer>
+      <section class="card shadow-md footer" style="border-radius: 0px">
+        <div class="card-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="footer-item mb-4">
+                  <h6>Welcome</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequuntur, adipisci? Voluptatem molestiae suscipit
+                    officia.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="footer-item mb-4 ml-md-5">
+                  <h6>Connect With Us</h6>
+                  <p><a href="">Facebook</a></p>
+                  <p><a href="">Twitter</a></p>
+                  <p><a href="">Instagram</a></p>
+                  <p><a href="">You Tube</a></p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="footer-item mb-4">
+                  <h6>Useful Links</h6>
+                  <p><a href="index.html">Home</a></p>
+                  <p><a href="">Mobile Phone</a></p>
+                  <p><a href="">Computer $ Laptop</a></p>
+                  <p><a href="contact.html">Contact Us</a></p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="footer-item ml-md-5">
+                  <h6>Contact Details</h6>
+                  <p>Address: 3548 Columbia Mine Road,</p>
+                  <p>Wheeling, West Virginia, 26003</p>
+                  <p>Contact : +959 69 496 4472</p>
+                  <p>E-mail : lwinkoko0271@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-feature">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 text-center">
+              <p class="text-white">
+                Copyright @ 2022 | Developed By Lwin Ko Ko
+              </p>
+            </div>
+            <div class="col-12 col-md-6 text-center">
+              <p>
+                <i class="fab fa-facebook mr-3"></i>
+                <i class="fab fa-twitter mr-3"></i>
+                <i class="fab fa-instagram mr-3"></i>
+                <i class="fab fa-youtube mr-3"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/app.js"></script>
+    <script>
+      $(".comment-review").html(`
+              <div class="col-12 review-form">
+              <hr />
+              <form method="post">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="john@gmail.com"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="">Rating</label>
+                  <div>
+                    <a href=""> <span class="fa fa-star"></span></a>
+                    <a href=""> <span class="fa fa-star"></span></a>
+                    <a href=""> <span class="fa fa-star"></span></a>
+                    <a href=""> <span class="fa fa-star"></span></a>
+                    <a href=""> <span class="fa fa-star"></span></a>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="title">Review title</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="title"
+                    name="review_title"
+                    placeholder="Give your review a title"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="body">Body a review (1500) </label>
+                  <textarea name="review_body" id="body" rows="10" class="form-control">
+      Write your comment here</textarea
+                  >
+                </div>
+                <button type="submit" class="btn btn-theme write-review-btn">Submit Review</button>
+              </form>
+            </div>
+                  `);
+
+      function commentFeedback() {
+        $(".comment-review").html(`
+              <div class="col-12 review-feedback-section">
+                          <hr />
+                          <div class="review-feedback">
+                            <p class="text-success">
+                              Thank you for submitting a review!
+                            </p>
+                          </div>
+                        </div>`);
+      }
+
+      $(".add-comment-review").on("click", function () {
+        $(".comment-review").toggle(400);
+      });
+
+      $(".write-review-btn").on("click", function (e) {
+        e.preventDefault();
+        $(".review-form").css("display", "none");
+        $(".review-button").hide();
+        commentFeedback();
+      });
+
+      let borders = document.querySelector(".product-detail-parent").children;
+      function changeImage(event) {
+        console.log(event);
+        document.querySelector(".oringinal-image").src = event.children[0].src;
+        for (let i = 0; i < borders.length; i++) {
+          borders[i].classList.remove("active");
+          event.classList.add("active");
+        }
+      }
+
+      let boxes = document.querySelector(".color-feature").children;
+      function changeColorImage(event) {
+        document.querySelector(".oringinal-image").src =
+          event.children[0].getAttribute("data-img");
+        document.querySelector("#color").innerHTML =
+          event.children[0].getAttribute("data-color");
+        for (let i = 0; i < boxes.length; i++) {
+          boxes[i].classList.remove("active");
+          event.classList.add("active");
+        }
+      }
+    </script>
+  </body>
+</html>
